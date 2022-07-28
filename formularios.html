@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="clase de formularios">
+    <meta name="robots" content="index.follow">
+    <title>Formularios</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="">
+                <label for="usuario">
+                    <p>Ingresa tu usuario</p>
+                    <input type="text" id="usuario" placeholder="Aqui" required>
+                </label>
+                <label for="contraseña">
+                    <p>Ingresa tu contraseña</p>
+                    <input type="text" id="contraseña" placeholder="Aqui" required>
+                </label>
+                <label for="nacimiento">
+                    <p>Que dia naciste</p>
+                    <input type="date" id="nacimiento" required>
+                </label>
+                <label for="tiempo">
+                    <p>Que hora es?</p>
+                    <input type="time" id="tiempo" required>
+                </label>
+                <label for="calendario">
+                    <p>Año, Dia, Hora </p>
+                    <input type="datetime-local" id="calendario" name="calendario" autocomplete="name" required>   <!--atributo name es para enviar -->
+                    <input type="submit">
+                </label>
+                <p>ETIQUETA SELECT</p>
+                <select name="" id="">
+                    <option value="HTML">HTML</option>
+                    <option value="JAVASCRIPT">JAVASCRIPT</option>
+                    <option value="CSS">CSS3</option>
+                    <option value="REACTJS">REACTJS</option>
+                    <option value="BOOSTRAP">BOOSTRAP</option>
+                </select> 
+                <P>AUTOCOMPLETAR SIN ETIQUETA SELECT</P>
+                <input list="cursos">
+                <datalist id="cursos">
+                    <option value="HTML"></option>
+                    <option value="JAVASCRIPT"></option>
+                    <option value="CSS3"></option>
+                    <option value="REACTJS"></option>
+                    <option value="BOOSTRAP"></option>
+                 </datalist>
+                 <input type="text" value="SOY UN INPUT">
+                 <button type="button">SOY UN BUTTOM</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
